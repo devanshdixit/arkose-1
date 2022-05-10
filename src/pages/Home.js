@@ -80,8 +80,7 @@ class Home extends React.Component {
                </div>
             </div>
             <Designer />
-            <Category />
-            <ServiceItem />
+            
             <div
                className="constrcution-eng row"
                style={{ margin: '-80px 0px', padding: '60px 0px' }}

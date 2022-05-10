@@ -4,6 +4,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { FaHome } from 'react-icons/fa'
 import ServiceItem from './ServiceItem'
+import Category from './Category'
 
 class Services extends React.Component {
    render() {
@@ -23,6 +24,7 @@ class Services extends React.Component {
                   </p>
                </div>
             </div>
+            <Category />
             <ServiceItem />
             <Footer />
          </div>

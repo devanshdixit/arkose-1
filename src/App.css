@@ -766,13 +766,21 @@ textarea:hover {
 }
 
 .footerContainer {
-   margin: 50px 100px;
+   margin-right: 100px;
+   margin-left: 100px;
+   margin-top: 35px;
+   margin-bottom: 60px;
 }
 
 .footerItem {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 30px;
+   display: flex;
+   flex-direction: row;
+}
+
+@media (max-width: 768px) {
+   .footerItem{
+      flex-direction: column;
+   }
 }
 
 .socialWrapper{

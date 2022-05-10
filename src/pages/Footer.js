@@ -110,7 +110,7 @@ class Footer extends React.Component {
                   <div className="footerContainer">
                      <div className="footerItem">
                         <div className="socialInfo">
-                           <div className="socialWrapper">
+                           <div className="">
                               <div className="mainTitle">
                                  <img
                                     src={
@@ -145,9 +145,28 @@ class Footer extends React.Component {
                                  </div>
                               </div>
                            </div>
+                           <h6 style={{marginTop:"40px"}} className="addressTitle">Head Office: Kanpur</h6>
+                           <p>
+                              <i className="fa fa-building"></i>{' '}
+                              {Parser().parse(address)}
+                           </p>
+                           <h6 className="addressTitle">Contact Us</h6>
+                           {Parser().parse(number)}
+                           <h6 className="addressTitle">Whatsapp</h6>
+                           <p>
+                              <i className="fab fa-whatsapp text-success"></i>{' '}
+                              9336080809
+                           </p>
+                           <h6 className="addressTitle">Mail Us</h6>
+                           {Parser().parse(email)}
                         </div>
 
-                        <div className="socialInfo">
+                        <div className="socialInfo" style={{
+                           maxWidth:"200px",
+                           width:"100%",
+                           marginLeft:"auto",
+                           marginRight:"auto"
+                        }}>
                            <div className="mainTitle">
                               <h4>
                                  {' '}
@@ -238,14 +257,22 @@ class Footer extends React.Component {
                            </div>
                         </div>
 
-                        <div className="socialInfo">
+                        <div className="socialInfo" style={{
+                           maxWidth:"564px",
+                           width:"100%"
+                        }}>
                            <div className="mainTitle">
                               <h4>
                                  {' '}
                                  Our Designer Services <span></span>
                               </h4>
                            </div>
-                           <div className="socialItem list-item">
+                           <div className="socialItem "
+                           style={{
+                              display:"flex",
+                              color:"white"
+                           }}>
+                              <div>
                               <p>BY CIVIL ENGINEER</p>
                               <ul>
                                  <li onClick={this.handleDesigner}>
@@ -261,6 +288,8 @@ class Footer extends React.Component {
                                     Supervision
                                  </li>
                               </ul>
+                              </div>
+                              <div>
                               <p>BY ARCHITECT</p>
                               <ul>
                                  <li onClick={this.handleDesigner}>
@@ -282,6 +311,8 @@ class Footer extends React.Component {
                                     Renovation & Remodeling
                                  </li>
                               </ul>
+                              </div>
+                              <div>
                               <p>BY INTERIOR DESIGNER</p>
                               <ul>
                                  <li onClick={this.handleDesigner}>
@@ -306,10 +337,11 @@ class Footer extends React.Component {
                                     Supervision
                                  </li>
                               </ul>
+                              </div>
                            </div>
                         </div>
 
-                        <div className="socialInfo">
+                        {/* <div className="socialInfo">
                            <div className="mainTitle">
                               <h4>
                                  {' '}
@@ -333,7 +365,7 @@ class Footer extends React.Component {
                            </p>
                            <h6 className="addressTitle">Mail Us</h6>
                            {Parser().parse(email)}
-                        </div>
+                        </div> */}
                      </div>
                   </div>
                </div>

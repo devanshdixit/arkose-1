@@ -1,6 +1,7 @@
 import React from 'react'
 import { Nav, Navbar } from 'react-bootstrap'
 import logo from '../img/logo-white.png'
+import iso from '../img/iso.png'
 import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
@@ -19,13 +20,15 @@ class Header extends React.Component {
                className="nav"
                sticky="top"
                expand="lg"
-               style={{ paddingTop: '0px', paddingBottom: '0px' }}
+               style={{ paddingTop: '0px', paddingBottom: '0px' ,height:"130px"}}
             >
-               <Navbar.Brand className="logo-container">
+               <Navbar.Brand className="logo-container" style={{height:"auto"}}>
                   <img
                      src={logo}
                      className="logo"
-                     style={{ marginTop: '15px' }}
+                     width='189.69px'
+                     height='100px'
+                     style={{ height: '100px',width:'215.69px' }}
                   />
                </Navbar.Brand>
 
@@ -38,9 +41,23 @@ class Header extends React.Component {
                         gap: '5px'
                      }}
                   >
+                     <div style={{
+                        display:'flex',
+                        flexDirection: 'row',
+                        justifyContent: 'flex-end'
+                     }}>
                      <p className="contact-info">
                         +91 7007022736 / arkosebuildcom@gmail.com
                      </p>
+                     <img
+                     src={iso}
+                     style={{ height: 'auto',width:'100%',
+                           maxHeight:"30px",
+                           maxWidth:"30px",
+                           marginRight:"2.5%" 
+                  }}
+                  />
+                     </div>
 
                      <Nav className="nav-link-container">
                         <Nav.Link>

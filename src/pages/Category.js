@@ -34,7 +34,7 @@ class Category extends React.Component {
             <div className="section-offer container">
                 <div className="sub-section-offer">
                     <h6>| Category</h6>
-                    <h1>Our Map Services</h1>
+                    <h1>Arkose Services</h1>
                 </div>
                 <div>
                     <div className="row">
@@ -83,11 +83,11 @@ class Category extends React.Component {
                             <h3>Plotting</h3>
                             <input type='button' id="view-more" className="Plotting" value='Read More' onClick={this.handleViewMore} />
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12 service-card">
+                        {/* <div className="col-lg-4 col-md-6 col-sm-12 service-card">
                             <img className="" src={bungalow} alt='' height={240} />
                             <h3>Bungalow Design</h3>
                             <input type='button' id="view-more" className="Bungalow Design" value='Read More' onClick={this.handleViewMore} />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
