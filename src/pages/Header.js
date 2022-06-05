@@ -28,7 +28,7 @@ class Header extends React.Component {
                      className="logo"
                      width='189.69px'
                      height='100px'
-                     style={{ height: '100px',width:'215.69px' }}
+                     style={{ height: '100px',width:'233.69px' }}
                   />
                </Navbar.Brand>
 
@@ -54,7 +54,8 @@ class Header extends React.Component {
                      style={{ height: 'auto',width:'100%',
                            maxHeight:"30px",
                            maxWidth:"30px",
-                           marginRight:"2.5%" 
+                           marginRight:"2.5%",
+                           marginBottom:'2%'
                   }}
                   />
                      </div>

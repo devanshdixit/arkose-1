@@ -181,6 +181,7 @@
 .contact-info{
    color: #ebebeb !important;
    margin-top: -20px;
+   align-items: center;
    margin-bottom: 0px;
    display: flex;
    justify-content: right;

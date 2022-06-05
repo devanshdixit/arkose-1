@@ -1,7 +1,9 @@
 import React from 'react'
 import axios from 'axios'
 import config from '../config'
-
+import Slider from "react-slick";
+import "react-slick/dist/react-slick";
+import "slick-carousel/slick/slick-theme.css";
 class Team extends React.Component {
     constructor(props) {
         super(props)
@@ -24,12 +26,22 @@ class Team extends React.Component {
         })
     }
     render() {
+        var settings = {
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          };
         return (
             <>
                 <div className="team-members container">
+
+    <Slider {...settings}>
                     {this.state.team && this.state.team.map((item, index) => {
-                        return (<div className="imgBox col-lg-3">
+                        return (<div className="imgBox col-lg-3" key={index}>
                             <div>
+                                {console.log(config.server.host + '/writable/uploads/' + item.profile)}
                                 <img
                                     className="team-member"
                                     src={config.server.host + '/writable/uploads/' + item.profile}
@@ -58,6 +70,7 @@ class Team extends React.Component {
                             </div>
                         </div>)
                     })}
+                    </Slider>
                 </div>
             </>
         )

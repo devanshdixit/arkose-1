@@ -104,11 +104,7 @@ class Home extends React.Component {
                         padding: '20px 30px 60px 30px ',
                         paddingBottom: '80px'
                      }}
-                     src={
-                        config.server.host +
-                        '/writable/uploads/' +
-                        this.state.work_excellence_img
-                     }
+                     src={process.env.PUBLIC_URL + '/images/designers/Picture19.png'}
                   />
                </div>
             </div>

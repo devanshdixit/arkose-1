@@ -111,7 +111,7 @@ class Footer extends React.Component {
                      <div className="footerItem">
                         <div className="socialInfo">
                            <div className="">
-                              <div className="mainTitle">
+                              <div className="mainTitle" style={{display:"flex",justifyContent:"center"}}>
                                  <img
                                     src={
                                        config.server.host +
@@ -122,7 +122,7 @@ class Footer extends React.Component {
                                     className="footer-logo"
                                  />
                               </div>
-                              <div className="socialItem">
+                              <div className="socialItem"  style={{display:"flex",justifyContent:"center"}}>
                                  <div className="socialLink facebook">
                                     <a href={facebook}>
                                        <i className="fab fa-facebook-f"></i>
@@ -134,13 +134,18 @@ class Footer extends React.Component {
                                     </a>
                                  </div>
                                  <div className="socialLink twitter">
-                                    <a href={twitter}>
+                                    <a href="https://twitter.com/arkosebuildcom">
                                        <i className="fab fa-twitter"></i>
                                     </a>
                                  </div>
                                  <div className="socialLink twitter">
                                     <a href={linkedin}>
                                        <i className="fab fa-linkedin"></i>
+                                    </a>
+                                 </div>
+                                 <div className="socialLink twitter">
+                                    <a href="https://www.youtube.com/channel/UCnFWV8WU8rsoQlzIpuaF8ug">
+                                       <i className="fab fa-youtube"></i>
                                     </a>
                                  </div>
                               </div>
