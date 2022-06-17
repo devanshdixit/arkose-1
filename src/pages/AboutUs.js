@@ -49,9 +49,9 @@ class AboutUs extends React.Component {
                         </Link>{' '}
                         / about us
                      </p>
-                     <p className="container">
+                     {/* <p className="container">
                         {Parser().parse(this.state.about)}
-                     </p>
+                     </p> */}
                   </div>
                </div>
             </div>

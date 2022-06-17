@@ -29,6 +29,7 @@ class Header extends React.Component {
                      width='189.69px'
                      height='100px'
                      style={{ height: '100px',width:'233.69px' }}
+                     alt=''
                   />
                </Navbar.Brand>
 
@@ -57,6 +58,7 @@ class Header extends React.Component {
                            marginRight:"2.5%",
                            marginBottom:'2%'
                   }}
+                  alt=''
                   />
                      </div>
 
